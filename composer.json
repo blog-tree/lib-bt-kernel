@@ -1,0 +1,27 @@
+{
+    "name": "blog-tree/lib-bt-kernel",
+    "description": "Core kernel for Blog-Tree project",
+    "keywords": ["bt", "bt-kernel", "bt-lib", "Blog-Tree", "bt-branch"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "support": {
+        "forum": "http://blog-tree.com",
+        "issues": "http://blog-tree.com"
+    },
+    "homepage": "http://blog-tree.com",
+    "require": {
+        "slim/slim": "^3.2",
+        "symfony/console":"dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "bt\\Garden\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Zagovorichev",
+            "email": "zagovorichev@gmail.com"
+        }
+    ]
+}
