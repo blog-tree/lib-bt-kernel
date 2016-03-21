@@ -8,6 +8,8 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Process\PhpExecutableFinder;
+use Symfony\Component\Process\ProcessUtils;
 
 class ServeCommand extends Command
 {
@@ -27,7 +29,7 @@ class ServeCommand extends Command
         
         $this->info('Blog-Tree development server started on http://' . $host . ':' . $port . '/');
 
-        $base = ProcessUtils::escapeArgument($this->laravel->basePath());
+        $base = ProcessUtils::escapeArgument($this->app->basePath());
         $binary = ProcessUtils::escapeArgument((new PhpExecutableFinder)->find(false));
         
         passthru("{$binary} -S {$host}:{$port} {$base}/server.php");
