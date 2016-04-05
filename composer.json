@@ -11,8 +11,7 @@
     "homepage": "http://blog-tree.com",
     "require": {
         "slim/slim": "^3.2",
-        "symfony/console":"dev-master",
-        "symfony/proccess":"~3.0"
+        "symfony/console":"dev-master"
     },
     "autoload": {
         "psr-4": {
