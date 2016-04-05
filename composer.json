@@ -11,11 +11,12 @@
     "homepage": "http://blog-tree.com",
     "require": {
         "slim/slim": "^3.2",
-        "symfony/console":"dev-master"
+        "symfony/console":"dev-master",
+        "symfony/proccess":"dev-master"
     },
     "autoload": {
         "psr-4": {
-            "bt\\Garden\\": ""
+            "bt\\": ""
         }
     },
     "authors": [
